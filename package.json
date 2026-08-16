@@ -106,7 +106,8 @@
 	},
 	"pnpm": {
 		"overrides": {
-			"unset-value": "2.0.1"
+			"unset-value": "2.0.1",
+			"nanoid": ">=3.3.18"
 		}
 	},
 	"jest-runner-eslint": {
