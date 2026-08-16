@@ -28,7 +28,7 @@ export const site_thumbnail_url =
 	'https://res.cloudinary.com/jacobherper/image/upload/v1641565970/website-dark-light.png';
 export const online_presence = [
 	'https://linkedin.com/in/amanullah8225',
-	'https://github.com/amanix007',
+	'https://github.com/amanullah8225',
 ];
 export const title = {};
 
@@ -90,8 +90,8 @@ const aman_ullah_resume_data = {
 			},
 			{
 				network: 'GitHub',
-				username: 'amanix007',
-				url: 'https://github.com/amanix007',
+				username: 'amanullah8225',
+				url: 'https://github.com/amanullah8225',
 			},
 		],
 	},
@@ -180,7 +180,7 @@ const aman_ullah_resume_data = {
 				logo: 'Rasuta-Energy-LTD-short',
 				url: '',
 			},
-			jobTitle: 'Software Engineer',
+			jobTitle: 'Software Engineer (Contract)',
 			startDate: '2020-01-31',
 			endDate: '2021-06-30',
 			technologies: [
@@ -246,7 +246,7 @@ const aman_ullah_resume_data = {
 				'Created WordPress and static websites for high-value local clients.',
 				'Delivered responsive, high-performance websites using vanilla JavaScript.',
 				'Created around 15 PSD to HTML websites.',
-				'Got my hand dirty with vanilla JavaScript on small to enterprise level projects.',
+				'Got my hands dirty with vanilla JavaScript on small to enterprise level projects.',
 			],
 			url: '',
 			location: 'Dhaka',
@@ -266,11 +266,11 @@ const aman_ullah_resume_data = {
 			technologies: ['JavaScript', 'HTML', 'CSS', 'WordPress', 'Responsive UI'],
 			highlights: [],
 			summary: [
-				'Created website and services for high valued local clients.',
-				'Got my hand dirty with vanilla JavaScript on small to enterprise level projects.',
+				'Created website and services for high-value local clients.',
+				'Got my hands dirty with vanilla JavaScript on small to enterprise level projects.',
 				'Improved Performance and Usability of the websites.',
-				'Learned about ionic there.',
-				'Created website and services for high valued govt clients like army and national museum.',
+				'Learned about Ionic there.',
+				'Created website and services for high-value govt clients like army and national museum.',
 				'Custom made software for touch Kiosk and dynamic banner.',
 				'Created Pixel Perfect UI for WordPress projects.',
 				'Created Custom WordPress theme.',
@@ -295,8 +295,8 @@ const aman_ullah_resume_data = {
 			technologies: ['JavaScript', 'HTML', 'CSS', 'E-mail UI', 'Responsive UI'],
 			highlights: [],
 			summary: [
-				'Created website and services for high valued local clients.',
-				'Got my hand dirty with vanilla JavaScript on small to enterprise level projects.',
+				'Created website and services for high-value local clients.',
+				'Got my hands dirty with vanilla JavaScript on small to enterprise level projects.',
 				'Improved Performance and Usability of the websites.',
 			],
 			url: '',
@@ -331,6 +331,7 @@ const aman_ullah_resume_data = {
 			area: 'H.S.C, Business/Commerce (2007 – 2009)',
 			date: '2009-01-01',
 			technologies: [],
+			hidden: true,
 		},
 		{
 			institute: {
@@ -345,6 +346,7 @@ const aman_ullah_resume_data = {
 			area: 'S.S.C, Commerce (2005 – 2007)',
 			date: '2007-01-01',
 			technologies: [],
+			hidden: true,
 		},
 	],
 	projects: [

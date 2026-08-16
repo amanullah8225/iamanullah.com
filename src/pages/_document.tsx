@@ -18,7 +18,7 @@ class MyDocument extends Document {
 				<Head>
 					<link href="/assets/favicon_light.svg" rel="shortcut icon" />
 				</Head>
-				<body className="antialiased bg-grey-200 text-off-black dark:bg-off-black dark:text-off-white">
+				<body className="antialiased bg-grey-200 text-off-black dark:bg-off-black dark:text-off-white print:bg-white print:text-off-black">
 					<Main />
 					<NextScript />
 				</body>

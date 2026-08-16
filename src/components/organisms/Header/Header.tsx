@@ -21,6 +21,10 @@ export const navItems = [
 		href: '/case-studies-projects',
 		title: 'Case Studies/Projects',
 	},
+	{
+		href: '/resume',
+		title: 'Resume',
+	},
 	// {
 	// 	href: '/blog',
 	// 	title: 'Blog',

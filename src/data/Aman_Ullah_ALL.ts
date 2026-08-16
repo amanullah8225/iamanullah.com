@@ -112,8 +112,8 @@ const aman_ullah_resume_data = {
 			},
 			{
 				network: 'Twitter',
-				username: 'amanix007',
-				url: 'https://twitter.com/amanix007',
+				username: 'amanullah8225',
+				url: 'https://twitter.com/amanullah8225',
 			},
 		],
 	},

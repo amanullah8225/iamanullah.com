@@ -8,7 +8,7 @@ const Footer = () => {
 				profiles={[
 					{
 						name: 'Github',
-						url: 'https://www.github.com/amanix007',
+						url: 'https://www.github.com/amanullah8225',
 						icon: 'GITHUB',
 					},
 					{
