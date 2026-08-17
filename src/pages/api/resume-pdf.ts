@@ -7,6 +7,12 @@ import puppeteer from 'puppeteer-core';
 
 import { getResumeVariant } from 'src/data/resumeVariants';
 
+// Must match the installed @sparticuz/chromium version (see package.json) —
+// used to fetch the matching prebuilt Chromium binary pack from GitHub
+// Releases at cold start instead of relying on the bundler to ship the
+// binary locally (which Vercel's build doesn't do reliably).
+const CHROMIUM_PACKAGE_VERSION = '149.0.0';
+
 const LOCAL_CHROME_PATHS = [
 	process.env.PUPPETEER_EXECUTABLE_PATH,
 	'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
@@ -45,9 +51,10 @@ export default async function handler(
 
 	try {
 		if (isServerless) {
+			const chromiumPackUrl = `https://github.com/Sparticuz/chromium/releases/download/v${CHROMIUM_PACKAGE_VERSION}/chromium-v${CHROMIUM_PACKAGE_VERSION}-pack.x64.tar`;
 			browser = await puppeteer.launch({
 				args: chromium.args,
-				executablePath: await chromium.executablePath(),
+				executablePath: await chromium.executablePath(chromiumPackUrl),
 				headless: true,
 			});
 		} else {
