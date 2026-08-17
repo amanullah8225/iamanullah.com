@@ -4,11 +4,19 @@ const moduleExports = {
 	swcMinify: true,
 	// assetPrefix: process.env.ASSET_HOST || '',
 	productionBrowserSourceMaps: process.env.NODE_ENV === 'production',
-	webpack(config) {
+	webpack(config, { isServer }) {
 		config.module.rules.push({
 			test: /\.svg$/,
 			use: ['@svgr/webpack'],
 		});
+
+		if (isServer) {
+			config.externals = [
+				...(config.externals || []),
+				'@sparticuz/chromium',
+				'puppeteer-core',
+			];
+		}
 
 		return config;
 	},
