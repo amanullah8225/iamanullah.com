@@ -75,6 +75,9 @@
     "node_modules",
     "src/pages-archived",
     "**/*.test.ts",
-    "**/*.test.tsx"
+    "**/*.test.tsx",
+    "src/components/molecules/RecruiterForm",
+    "src/components/atoms/Input",
+    "src/components/atoms/Select"
   ]
 }

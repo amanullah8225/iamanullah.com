@@ -145,8 +145,8 @@ importers:
         specifier: 19.2.4
         version: 19.2.4(@types/react@19.2.18)
       '@types/react-headroom':
-        specifier: ^2.2.2
-        version: 2.2.2
+        specifier: ^3.2.3
+        version: 3.2.3
       '@typescript-eslint/eslint-plugin':
         specifier: ^5.33.0
         version: 5.62.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@4.7.4))(eslint@8.57.1)(typescript@4.7.4)
@@ -2330,8 +2330,8 @@ packages:
     peerDependencies:
       '@types/react': 19.2.18
 
-  '@types/react-headroom@2.2.2':
-    resolution: {integrity: sha512-gSdmlTv8CjM3d6nMyJHrHjmxzYdoQwacjWwM/2Wlw/c+e+I0M4mPSLxnIUL6dGm/c7j/74ei9aJIljZur2pPJQ==}
+  '@types/react-headroom@3.2.3':
+    resolution: {integrity: sha512-rdgcMfoxN6wnGm8mSlwA7vuuK8ojXUI/tWHX1qJSAS7DNuvt7zv3zUtYs15UETEtE0Wc2YJCq0PZlHhZ+lRP4Q==}
 
   '@types/react@19.2.18':
     resolution: {integrity: sha512-AnzbBERsrLKtk2XSfTbYRLjQPdy116Sty4q+T+Bp3IC4l6jNBvreVPAHmpq9qhXQM7CXZPjLVmGMw9sy+hxQ3w==}
@@ -11582,7 +11582,7 @@ snapshots:
     dependencies:
       '@types/react': 19.2.18
 
-  '@types/react-headroom@2.2.2':
+  '@types/react-headroom@3.2.3':
     dependencies:
       '@types/react': 19.2.18
 
