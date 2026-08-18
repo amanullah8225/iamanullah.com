@@ -1,39 +1,80 @@
 {
-	"compilerOptions": {
-		"target": "es5",
-		"lib": ["dom", "dom.iterable", "esnext"],
-		"allowJs": true,
-		"baseUrl": ".",
-		"skipLibCheck": true,
-		"strict": true,
-		"forceConsistentCasingInFileNames": true,
-		"noEmit": true,
-		"esModuleInterop": true,
-		"module": "esnext",
-		"moduleResolution": "node",
-		"resolveJsonModule": true,
-		"isolatedModules": true,
-		"jsx": "preserve",
-		"paths": {
-			// Components
-			"Atoms/*": ["./src/components/atoms/*"],
-			"Molecules/*": ["./src/components/molecules/*"],
-			"Organisms/*": ["./src/components/organisms/*"],
-			"Species/*": ["./src/components/species/*"],
-			"Templates/*": ["./src/components/templates/*"],
-			// Other folders
-			"@types": ["./@types/"],
-			"@types/*": ["./@types/*"],
-			"Config": ["./src/config/"],
-			"Config/*": ["./src/config/*"],
-			"MockData": ["./src/mockData"],
-			"MockData/*": ["./src/mockData/*"],
-			"Pages/*": ["./src/pages*"],
-			"Public/*": ["./public/*"],
-			"Utils/*": ["./src/utils/*"]
-		},
-		"incremental": true
-	},
-	"include": ["*.d.ts", "**/*.ts", "**/*.tsx"],
-	"exclude": ["node_modules", "src/pages-archived"]
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "baseUrl": ".",
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "paths": {
+      // Components
+      "Atoms/*": [
+        "./src/components/atoms/*"
+      ],
+      "Molecules/*": [
+        "./src/components/molecules/*"
+      ],
+      "Organisms/*": [
+        "./src/components/organisms/*"
+      ],
+      "Species/*": [
+        "./src/components/species/*"
+      ],
+      "Templates/*": [
+        "./src/components/templates/*"
+      ],
+      // Other folders
+      "@types": [
+        "./@types/"
+      ],
+      "@types/*": [
+        "./@types/*"
+      ],
+      "Config": [
+        "./src/config/"
+      ],
+      "Config/*": [
+        "./src/config/*"
+      ],
+      "MockData": [
+        "./src/mockData"
+      ],
+      "MockData/*": [
+        "./src/mockData/*"
+      ],
+      "Pages/*": [
+        "./src/pages*"
+      ],
+      "Public/*": [
+        "./public/*"
+      ],
+      "Utils/*": [
+        "./src/utils/*"
+      ]
+    },
+    "incremental": true
+  },
+  "include": [
+    "*.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "src/pages-archived",
+    "**/*.test.ts",
+    "**/*.test.tsx"
+  ]
 }

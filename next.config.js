@@ -1,7 +1,6 @@
 // const { withSentryConfig } = require('@sentry/nextjs');
 const moduleExports = {
 	poweredByHeader: false,
-	swcMinify: true,
 	// assetPrefix: process.env.ASSET_HOST || '',
 	productionBrowserSourceMaps: process.env.NODE_ENV === 'production',
 	webpack(config, { isServer }) {
@@ -20,21 +19,17 @@ const moduleExports = {
 
 		return config;
 	},
-	publicRuntimeConfig: {
-		MAILCHIMP_API_KEY: process.env.MAILCHIMP_API_KEY || '',
-		MAILCHIMP_API_SERVER: process.env.MAILCHIMP_API_SERVER || '',
-		MAILCHIMP_AUDIENCE_ID: process.env.MAILCHIMP_AUDIENCE_ID || '',
-	},
 	images: {
-		domains: [
-			'dev-to-uploads.s3.amazonaws.com',
-			'media.graphcms.com',
-			'media.graphassets.com',
-			'via.placeholder.com',
-			'picsum.photos',
+		remotePatterns: [
+			{ protocol: 'https', hostname: 'dev-to-uploads.s3.amazonaws.com' },
+			{ protocol: 'https', hostname: 'media.graphcms.com' },
+			{ protocol: 'https', hostname: 'media.graphassets.com' },
+			{ protocol: 'https', hostname: 'via.placeholder.com' },
+			{ protocol: 'https', hostname: 'picsum.photos' },
 		],
 		dangerouslyAllowSVG: true,
 		contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+		qualities: [75, 100],
 	},
 };
 

@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const Logo = () => {
 	return (
-		<Link href="/" passHref>
+		<Link href="/" passHref legacyBehavior>
 			<motion.a
 				className="group relative transition whitespace-nowrap hover:transition duration-300 text-2xl font-bold flex gap-4 items-center"
 				animate={{ opacity: 1, y: 0 }}

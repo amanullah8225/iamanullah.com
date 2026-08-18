@@ -24,21 +24,21 @@ const ResumeIndexPage: NextPage = () => {
 					out differently. Pick whichever reads best for where it&apos;s going.
 				</p>
 
-				<Link href="/resume-all" passHref>
-					<a className="mt-2 inline-block underline">
-						View all formats on one page →
-					</a>
+				<Link href="/resume-all" className="mt-2 inline-block underline">
+					View all formats on one page →
 				</Link>
 
 				<div className="mt-10 grid gap-6 sm:grid-cols-2">
 					{resumeVariants.map((variant) => (
-						<Link key={variant.slug} href={`/resume/${variant.slug}`} passHref>
-							<a className="block rounded-lg border border-grey-300 p-6 transition hover:border-grey-500 dark:border-grey-700 dark:hover:border-grey-500">
-								<h2 className="headline text-xl">{variant.label}</h2>
-								<p className="mt-2 text-sm text-grey-600 dark:text-grey-400">
-									{variant.description}
-								</p>
-							</a>
+						<Link
+							key={variant.slug}
+							href={`/resume/${variant.slug}`}
+							className="block rounded-lg border border-grey-300 p-6 transition hover:border-grey-500 dark:border-grey-700 dark:hover:border-grey-500"
+						>
+							<h2 className="headline text-xl">{variant.label}</h2>
+							<p className="mt-2 text-sm text-grey-600 dark:text-grey-400">
+								{variant.description}
+							</p>
 						</Link>
 					))}
 				</div>

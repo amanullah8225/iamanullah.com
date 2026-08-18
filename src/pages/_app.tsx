@@ -39,23 +39,23 @@ function MyApp({ Component, pageProps }: AppProps) {
 		<ApolloProvider client={client}>
 			<ThemeProvider attribute="class">
 				<Layout>
-					<AnimatePresence
-						exitBeforeEnter
-						initial={false}
-						onExitComplete={() => window.scrollTo(0, 0)}
-					>
-						<Script
-							src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-							strategy="afterInteractive"
-						/>
-						<Script id="gtag-init" strategy="afterInteractive">
-							{`
+					<Script
+						src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+						strategy="afterInteractive"
+					/>
+					<Script id="gtag-init" strategy="afterInteractive">
+						{`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', '${GA_MEASUREMENT_ID}');
         `}
-						</Script>
+					</Script>
+					<AnimatePresence
+						mode="wait"
+						initial={false}
+						onExitComplete={() => window.scrollTo(0, 0)}
+					>
 						<Component {...pageProps} />
 					</AnimatePresence>
 				</Layout>
