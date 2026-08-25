@@ -425,18 +425,18 @@ const aman_ullah_resume_data = {
 <p>One of the standout features I architected was a dynamic coupon system for B2C users that seamlessly integrated across all booking services. By building an extensive, reusable design system, my team was able to rapidly ship new features without sacrificing UI quality or performance.</p>`,
 		},
 		{
-			id: 'sharetrip-pagebuilder',
-			slug: 'sharetrip-pagebuilder-template-editor',
-			title: "Building ShareTrip's PageBuilder, a Wix-Like Template Editor",
+			id: 'uideck-pagebuilder',
+			slug: 'uideck-pagebuilder-template-editor',
+			title: "Building UIdeck's PageBuilder, a Wix-Like Template Editor",
 			seoDescription:
-				"An internal drag-and-drop page builder I built at ShareTrip: a Wix-like editor for Themeforest-style HTML templates, with inline editing, media management, and zip export.",
+				'A drag-and-drop page builder I built for UIdeck, an HTML/Bootstrap/Tailwind template marketplace: a Wix-like editor for their Themeforest-style templates, with inline editing, media management, and zip export.',
+			projectUrl: 'https://uideck.com/',
 			client: {
-				name: 'ShareTrip LTD',
-				logo: 'sharetrip-short',
+				name: 'UIdeck',
 			},
 			technologies: ['React', 'MobX', 'SCSS', 'Webpack', 'Express.js', 'Node.js'],
 			primaryImage: '/assets/case-studies/pagebuilder-main.svg',
-			content: `<p>Alongside my work on ShareTrip's booking platforms, I built PageBuilder — an internal tool that takes Themeforest-style HTML templates and makes them editable, Wix-style, without touching code.</p><br/>
+			content: `<p>UIdeck builds and sells HTML, Bootstrap, and Tailwind CSS website templates. For them, I built PageBuilder — a tool that takes their Themeforest-style HTML templates and makes them editable, Wix-style, without touching code.</p><br/>
 <p>It supports inline text editing similar to the Medium editor, a media gallery for swapping images in any layer, and custom editing panels for creative sections. Each section is re-orderable and has a changeable background. Finished pages export as a zip containing all the necessary HTML, CSS, JS, and PHP files, ready to drop onto any server. The editor is built with <strong>React</strong> and <strong>MobX</strong>, styled with <strong>SCSS</strong>, and backed by a <strong>Node.js</strong>/<strong>Express.js</strong> API.</p>`,
 		},
 		{
