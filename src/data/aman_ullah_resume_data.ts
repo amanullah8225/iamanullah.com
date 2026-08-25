@@ -18,6 +18,9 @@ export const site_owner_talk_about = [
 	'MongoDB',
 	'RESTful APIs',
 	'Playwright',
+	'Docker',
+	'AWS',
+	'CI/CD',
 	'HTML5',
 	'CSS',
 	'Web Performance',
@@ -125,6 +128,9 @@ const aman_ullah_resume_data = {
 				'Playwright',
 				'E2E Testing',
 				'Jest',
+				'Docker',
+				'AWS',
+				'CI/CD',
 			],
 			highlights: [],
 			summary: [
@@ -135,6 +141,7 @@ const aman_ullah_resume_data = {
 				'Implemented a referendum voting system.',
 				'Integrated the latest HubSpot API into its backend and frontend to enhance lead generation, track user behaviour and check ROI.',
 				'Ensured testing with Jest and Playwright.',
+				'Set up CI/CD pipelines and containerized deployments with Docker on AWS.',
 			],
 			url: 'https://oxfordsustainable.com/',
 			location: 'UK (Remote)',
@@ -165,6 +172,9 @@ const aman_ullah_resume_data = {
 				'Tailwind CSS',
 				'Playwright',
 				'E2E Testing',
+				'Docker',
+				'AWS',
+				'CI/CD',
 			],
 			highlights: [],
 			summary: [
@@ -174,6 +184,7 @@ const aman_ullah_resume_data = {
 				'Created a dynamic coupon system for B2C users, ensuring seamless integration across services.',
 				'Built an extensive design system to support complex UI/UX needs across multiple booking services.',
 				'Mentored and led a team of 5 frontend engineers for 3 years, ensuring high-quality deliverables.',
+				'Set up CI/CD pipelines and containerized deployments with Docker on AWS.',
 			],
 			url: 'https://www.linkedin.com/company/sharetrip/',
 			location: 'Dhaka',
@@ -381,6 +392,9 @@ const aman_ullah_resume_data = {
 				'Playwright',
 				'E2E Testing',
 				'FinTech Security',
+				'Docker',
+				'AWS',
+				'CI/CD',
 			],
 			primaryImage: '/assets/case-studies/oxford-sustainable-main.png',
 			secondaryImages: [
@@ -389,7 +403,8 @@ const aman_ullah_resume_data = {
 			],
 			content: `<p>At Oxford Sustainable, I was tasked with a comprehensive overhaul of the B2C website and internal tools. The goal was to enhance user experience, improve SEO, and streamline our internal workflows.</p><br/>
 <p>I spearheaded the redesign using <strong>Next.js</strong> and <strong>React</strong>, which immediately yielded significant improvements in page load speeds and organic search visibility. To ensure consistency across our growing ecosystem, I architected a custom internal design system from the ground up.</p><br/>
-<p>Beyond the frontend, I developed a MERN-based auto-promotion mailing system with a dynamic email templating engine, greatly reducing the marketing team's operational overhead. I also integrated the latest HubSpot APIs to enhance lead generation tracking. Quality was ensured through rigorous end-to-end testing with Jest and Playwright, resulting in a highly stable, high-performance platform.</p>`,
+<p>Beyond the frontend, I developed a MERN-based auto-promotion mailing system with a dynamic email templating engine, greatly reducing the marketing team's operational overhead. I also integrated the latest HubSpot APIs to enhance lead generation tracking. Quality was ensured through rigorous end-to-end testing with Jest and Playwright, resulting in a highly stable, high-performance platform.</p><br/>
+<p>On the infrastructure side, I set up <strong>CI/CD</strong> pipelines and containerized deployments with <strong>Docker</strong> on <strong>AWS</strong>, streamlining releases across the platform.</p>`,
 		},
 		{
 			id: 'sharetrip-booking',
@@ -414,6 +429,9 @@ const aman_ullah_resume_data = {
 				'Tailwind CSS',
 				'Playwright',
 				'E2E Testing',
+				'Docker',
+				'AWS',
+				'CI/CD',
 			],
 			primaryImage: '/assets/case-studies/sharetrip-main.png',
 			secondaryImages: [
@@ -422,7 +440,8 @@ const aman_ullah_resume_data = {
 			],
 			content: `<p>During my 6-year tenure at ShareTrip, the platform evolved into a massive travel ecosystem. I led a team of 5 frontend engineers in developing and scaling the frontend architecture that handled Flights, Hotels, Visas, Holidays, Tours, and Transfers.</p><br/>
 <p>The challenge was managing complex state and massive traffic—handling over <strong>72K+ monthly visitors</strong> and processing <strong>600 million BDT</strong> in monthly sales. To keep the platform fast and maintainable, I led the redesign and rebuild of both B2C and B2B platforms multiple times, ultimately migrating to <strong>Next.js</strong> and <strong>TypeScript</strong> for better UX and developer experience.</p><br/>
-<p>One of the standout features I architected was a dynamic coupon system for B2C users that seamlessly integrated across all booking services. By building an extensive, reusable design system, my team was able to rapidly ship new features without sacrificing UI quality or performance.</p>`,
+<p>One of the standout features I architected was a dynamic coupon system for B2C users that seamlessly integrated across all booking services. By building an extensive, reusable design system, my team was able to rapidly ship new features without sacrificing UI quality or performance.</p><br/>
+<p>I also set up <strong>CI/CD</strong> pipelines and containerized deployments with <strong>Docker</strong> on <strong>AWS</strong>, streamlining releases across the B2C and B2B platforms.</p>`,
 		},
 		{
 			id: 'uideck-pagebuilder',
