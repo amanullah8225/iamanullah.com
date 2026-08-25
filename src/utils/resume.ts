@@ -91,7 +91,7 @@ export const getResumeViewModel = (): ResumeViewModel => ({
 	skills: data.textContent.talkAbout,
 	projects: data.projects.map((project) => ({
 		title: project.title,
-		url: project.projectUrl,
+		...(project.projectUrl ? { url: project.projectUrl } : {}),
 		clientName: project.client.name,
 		technologies: project.technologies,
 	})),
