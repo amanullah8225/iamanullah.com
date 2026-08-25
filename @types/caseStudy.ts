@@ -9,12 +9,12 @@ export interface ICaseStudy {
 	projectUrl?: string;
 	client: {
 		name: string;
-		logo: string;
+		logo?: string;
 	};
 	content: string;
 	technologies: string[];
-	primaryImage: string;
-	secondaryImages: string[];
+	primaryImage?: string;
+	secondaryImages?: string[];
 }
 
 export interface IRawCaseStudy {

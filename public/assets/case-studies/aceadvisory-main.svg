@@ -1,0 +1,30 @@
+<svg width="950" height="550" viewBox="0 0 950 550" xmlns="http://www.w3.org/2000/svg">
+	<defs>
+		<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+			<stop offset="0%" stop-color="#00BAFF"/>
+			<stop offset="100%" stop-color="#BB48BF"/>
+		</linearGradient>
+		<radialGradient id="glowA" cx="50%" cy="50%" r="50%">
+			<stop offset="0%" stop-color="#ffffff" stop-opacity="0.28"/>
+			<stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+		</radialGradient>
+		<pattern id="dots" width="30" height="30" patternUnits="userSpaceOnUse">
+			<circle cx="2" cy="2" r="1.6" fill="#ffffff" fill-opacity="0.16"/>
+		</pattern>
+	</defs>
+	<rect width="950" height="550" rx="28" fill="url(#bg)"/>
+	<rect width="950" height="550" rx="28" fill="url(#dots)"/>
+	<circle cx="850" cy="460" r="220" fill="url(#glowA)"/>
+	<circle cx="110" cy="90" r="190" fill="url(#glowA)"/>
+	<g transform="translate(420,275)" fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" opacity="0.95">
+		<path d="M-110 -170 L40 -170 L110 -100 L110 170 L-110 170 Z"/>
+		<path d="M40 -170 L40 -100 L110 -100"/>
+		<line x1="-70" y1="-30" x2="70" y2="-30"/>
+		<line x1="-70" y1="20" x2="70" y2="20"/>
+		<line x1="-70" y1="70" x2="20" y2="70"/>
+	</g>
+	<g transform="translate(560,120)">
+		<circle cx="0" cy="0" r="58" fill="#ffffff" opacity="0.95"/>
+		<path d="M-24 2 L-6 22 L28 -18" fill="none" stroke="#BB48BF" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+	</g>
+</svg>

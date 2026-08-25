@@ -1,0 +1,33 @@
+<svg width="950" height="550" viewBox="0 0 950 550" xmlns="http://www.w3.org/2000/svg">
+	<defs>
+		<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+			<stop offset="0%" stop-color="#945BF1"/>
+			<stop offset="100%" stop-color="#BB48BF"/>
+		</linearGradient>
+		<radialGradient id="glowA" cx="50%" cy="50%" r="50%">
+			<stop offset="0%" stop-color="#ffffff" stop-opacity="0.28"/>
+			<stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+		</radialGradient>
+		<pattern id="dots" width="30" height="30" patternUnits="userSpaceOnUse">
+			<circle cx="2" cy="2" r="1.6" fill="#ffffff" fill-opacity="0.16"/>
+		</pattern>
+	</defs>
+	<rect width="950" height="550" rx="28" fill="url(#bg)"/>
+	<rect width="950" height="550" rx="28" fill="url(#dots)"/>
+	<circle cx="120" cy="470" r="230" fill="url(#glowA)"/>
+	<circle cx="860" cy="70" r="190" fill="url(#glowA)"/>
+	<g transform="translate(475,275)" fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" opacity="0.95">
+		<rect x="-160" y="-105" width="320" height="210" rx="20"/>
+		<line x1="-160" y1="-55" x2="160" y2="-55"/>
+		<circle cx="-133" cy="-80" r="6" fill="#ffffff" stroke="none"/>
+		<circle cx="-108" cy="-80" r="6" fill="#ffffff" stroke="none"/>
+		<circle cx="-83" cy="-80" r="6" fill="#ffffff" stroke="none"/>
+		<rect x="-130" y="-25" width="120" height="100" rx="12"/>
+		<rect x="10" y="-25" width="150" height="42" rx="10"/>
+		<rect x="10" y="33" width="150" height="42" rx="10"/>
+	</g>
+	<g transform="translate(610,150)">
+		<path d="M0 40 L28 12 L14 -2 L-14 26 Z" fill="#ffffff" opacity="0.95"/>
+		<path d="M-14 26 L-26 40 L-14 34 Z" fill="#ffffff" opacity="0.7"/>
+	</g>
+</svg>

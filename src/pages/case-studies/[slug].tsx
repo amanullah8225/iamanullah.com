@@ -47,13 +47,15 @@ const CaseStudyPage: NextPage<IProps> = ({ slug }) => {
 					<div className="flex flex-col h-full justify-center">
 						<strong className="mb-2 text-sm">Client:</strong>
 						<div className="mb-4 flex gap-2 items-center">
-							<Image
-								src={`/assets/companies/${client.logo}.png`}
-								alt={client.name}
-								width={32}
-								height={32}
-								className="rounded-md"
-							/>
+							{client.logo && (
+								<Image
+									src={`/assets/companies/${client.logo}.png`}
+									alt={client.name}
+									width={32}
+									height={32}
+									className="rounded-md"
+								/>
+							)}
 							<h2 className="font-bold text-xl">{client.name}</h2>
 						</div>
 						<p className="text-sm w-80">
@@ -70,14 +72,16 @@ const CaseStudyPage: NextPage<IProps> = ({ slug }) => {
 							</div>
 						)}
 					</div>
-					<div className="-mb-8 md:mb-0">
-						<FloatingImages
-							topFloatingImage={secondaryImages[0]}
-							bottomFloatingImage={secondaryImages[1]}
-							mainImage={primaryImage}
-							altText={title}
-						/>
-					</div>
+					{primaryImage && (
+						<div className="-mb-8 md:mb-0">
+							<FloatingImages
+								topFloatingImage={secondaryImages?.[0]}
+								bottomFloatingImage={secondaryImages?.[1]}
+								mainImage={primaryImage}
+								altText={title}
+							/>
+						</div>
+					)}
 				</div>
 				<div
 					className="mt-8 text-lg prose dark:prose-invert"

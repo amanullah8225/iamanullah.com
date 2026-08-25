@@ -424,6 +424,120 @@ const aman_ullah_resume_data = {
 <p>The challenge was managing complex state and massive traffic—handling over <strong>72K+ monthly visitors</strong> and processing <strong>600 million BDT</strong> in monthly sales. To keep the platform fast and maintainable, I led the redesign and rebuild of both B2C and B2B platforms multiple times, ultimately migrating to <strong>Next.js</strong> and <strong>TypeScript</strong> for better UX and developer experience.</p><br/>
 <p>One of the standout features I architected was a dynamic coupon system for B2C users that seamlessly integrated across all booking services. By building an extensive, reusable design system, my team was able to rapidly ship new features without sacrificing UI quality or performance.</p>`,
 		},
+		{
+			id: 'sharetrip-pagebuilder',
+			slug: 'sharetrip-pagebuilder-template-editor',
+			title: "Building ShareTrip's PageBuilder, a Wix-Like Template Editor",
+			seoDescription:
+				"An internal drag-and-drop page builder I built at ShareTrip: a Wix-like editor for Themeforest-style HTML templates, with inline editing, media management, and zip export.",
+			client: {
+				name: 'ShareTrip LTD',
+				logo: 'sharetrip-short',
+			},
+			technologies: ['React', 'MobX', 'SCSS', 'Webpack', 'Express.js', 'Node.js'],
+			primaryImage: '/assets/case-studies/pagebuilder-main.svg',
+			content: `<p>Alongside my work on ShareTrip's booking platforms, I built PageBuilder — an internal tool that takes Themeforest-style HTML templates and makes them editable, Wix-style, without touching code.</p><br/>
+<p>It supports inline text editing similar to the Medium editor, a media gallery for swapping images in any layer, and custom editing panels for creative sections. Each section is re-orderable and has a changeable background. Finished pages export as a zip containing all the necessary HTML, CSS, JS, and PHP files, ready to drop onto any server. The editor is built with <strong>React</strong> and <strong>MobX</strong>, styled with <strong>SCSS</strong>, and backed by a <strong>Node.js</strong>/<strong>Express.js</strong> API.</p>`,
+		},
+		{
+			id: 'pharma71-medicine-delivery',
+			slug: 'pharma71-medicine-delivery-platform',
+			title: "Building Pharma71's Android App & Dashboard",
+			seoDescription:
+				'A look back at building the React Native Android app and React dashboard for Pharma71, a medicine delivery service.',
+			client: {
+				name: 'Pharma71',
+				logo: 'pharma71-short',
+			},
+			technologies: ['React', 'Redux', 'Ant Design', 'React Native'],
+			primaryImage: '/assets/case-studies/pharma71-main.svg',
+			content: `<p>At Pharma71, a medicine delivery service, I built the Android app using <strong>React Native</strong> and <strong>Redux</strong>.</p><br/>
+<p>Alongside the app, I wrote the <strong>React</strong> and markup for Pharma71's internal Dashboard, using <strong>Ant Design</strong> for the component library.</p>`,
+		},
+		{
+			id: 'ticketchai-booking',
+			slug: 'ticketchai-ticket-booking-platform',
+			title: "Building TicketChai's Flight Booking Platform",
+			seoDescription:
+				'A look back at building a flight booking platform with React, Redux and Redux Saga for TicketChai, a Dhaka-based ticket booking service.',
+			projectUrl: 'https://www.ticketchai.com/',
+			client: {
+				name: 'TicketChai',
+			},
+			technologies: ['React', 'Redux', 'Redux Saga', 'Ant Design'],
+			primaryImage: '/assets/case-studies/ticketchai-main.svg',
+			content: `<p>TicketChai was a Dhaka-based flight booking service and sister concern of Pharma71, where I was formally employed. I built its booking platform using <strong>React</strong>, <strong>Redux</strong> and <strong>Redux Saga</strong> for state and side-effect management, and <strong>Ant Design</strong> for the component library — covering search, selection, and booking flows.</p>`,
+		},
+		{
+			id: 'axisbd-frontend',
+			slug: 'axisbd-frontend-development',
+			title: 'Front End Development for AXIS BD',
+			seoDescription:
+				'Front end development for AXIS BD, an industrial construction and infrastructure company in Bangladesh.',
+			projectUrl: 'http://axisbd.com/',
+			client: {
+				name: 'AXIS BD',
+			},
+			technologies: ['HTML', 'CSS', 'JavaScript'],
+			primaryImage: '/assets/case-studies/axisbd-main.svg',
+			content: `<p>Built the front end for AXIS BD, an industrial construction and infrastructure company in Bangladesh offering end-to-end building solutions.</p>`,
+		},
+		{
+			id: 'bengal-meat-qurbani',
+			slug: 'bengal-meat-qurbani-campaign',
+			title: "Front End for Bengal Meat's Qurbani Campaign",
+			seoDescription:
+				"Front end development for Bengal Meat's Qurbani campaign page, part of their halal meat e-commerce platform.",
+			projectUrl: 'https://bengalmeat.com/qurbani/',
+			client: {
+				name: 'Bengal Meat',
+			},
+			technologies: ['HTML', 'CSS', 'JavaScript'],
+			primaryImage: '/assets/case-studies/bengalmeat-main.svg',
+			content: `<p>Built the front end for Bengal Meat's Qurbani campaign page, part of their e-commerce platform for ordering halal meat products online.</p>`,
+		},
+		{
+			id: 'ace-advisory-frontend',
+			slug: 'ace-advisory-frontend-development',
+			title: 'Front End Development for ACE Advisory',
+			seoDescription:
+				'Front end development for ACE Advisory, an accounting, payroll, tax and corporate secretarial services firm in Bangladesh.',
+			projectUrl: 'https://aceadvisory.biz/',
+			client: {
+				name: 'ACE Advisory',
+			},
+			technologies: ['HTML', 'CSS', 'JavaScript'],
+			primaryImage: '/assets/case-studies/aceadvisory-main.svg',
+			content: `<p>Built the front end for ACE Advisory, an accounting, payroll, tax, and corporate secretarial services firm serving businesses in Bangladesh.</p>`,
+		},
+		{
+			id: 'sitar-restaurant-ottawa',
+			slug: 'sitar-indian-restaurant-ottawa',
+			title: 'Front End & WordPress for Sitar Indian Restaurant',
+			seoDescription:
+				"Front end development and WordPress theming for Sitar Indian Restaurant's website in Ottawa, Canada.",
+			projectUrl: 'http://sitarindianrestaurantottawa.ca/',
+			client: {
+				name: 'Sitar Indian Restaurant',
+			},
+			technologies: ['HTML', 'CSS', 'WordPress'],
+			primaryImage: '/assets/case-studies/sitar-main.svg',
+			content: `<p>Built the front end and WordPress theme for Sitar Indian Restaurant's website in Ottawa, Canada.</p>`,
+		},
+		{
+			id: 'i-clique-website',
+			slug: 'i-clique-website',
+			title: 'Front End & WordPress for i-clique',
+			seoDescription:
+				"Front end development and WordPress theming for i-clique's website.",
+			projectUrl: 'http://www.i-clique.net',
+			client: {
+				name: 'i-clique',
+			},
+			technologies: ['HTML', 'CSS', 'WordPress'],
+			primaryImage: '/assets/case-studies/iclique-main.svg',
+			content: `<p>Built the front end and WordPress theme for i-clique's website.</p>`,
+		},
 	],
 };
 
