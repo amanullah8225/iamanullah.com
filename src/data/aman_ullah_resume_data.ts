@@ -23,6 +23,7 @@ export const site_owner_talk_about = [
 	'Docker',
 	'AWS',
 	'CI/CD',
+	'GitHub Actions',
 	'HTML5',
 	'CSS',
 	'Web Performance',
