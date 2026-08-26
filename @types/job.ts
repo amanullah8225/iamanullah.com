@@ -3,6 +3,7 @@ import { ICompany, IRawCompany } from '@types';
 
 export interface ISummaryLine {
 	text: string;
+	/** Excludes this bullet everywhere it's rendered (resume and the About/Home job list). */
 	hidden?: boolean;
 }
 

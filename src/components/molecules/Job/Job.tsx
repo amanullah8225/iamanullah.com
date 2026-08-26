@@ -67,11 +67,13 @@ const Job: FC<IJob> = ({
 			</p>
 
 			<ul className="list-disc ml-4 mt-4">
-				{summary.map((line) => (
-					<li className="mt-1" key={line.text}>
-						{line.text}
-					</li>
-				))}
+				{summary
+					.filter((line) => !line.hidden)
+					.map((line) => (
+						<li className="mt-1" key={line.text}>
+							{line.text}
+						</li>
+					))}
 			</ul>
 		</Box>
 	);
