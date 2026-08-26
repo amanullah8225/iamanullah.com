@@ -20,6 +20,8 @@ export const site_owner_talk_about = [
 	'MongoDB',
 	'RESTful APIs',
 	'Playwright',
+	'Cypress',
+	'CI/CD',
 	'HTML5',
 	'CSS',
 	'Web Performance',
