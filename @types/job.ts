@@ -1,13 +1,18 @@
 import { ReactNode } from 'react';
 import { ICompany, IRawCompany } from '@types';
 
+export interface ISummaryLine {
+	text: string;
+	hidden?: boolean;
+}
+
 export interface IJob {
 	company: ICompany;
 	jobTitle: string;
 	startDate: string;
 	endDate: string | null;
 	technologies: string[];
-	summary: string[];
+	summary: ISummaryLine[];
 	location: string;
 }
 

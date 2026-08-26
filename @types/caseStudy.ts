@@ -15,6 +15,8 @@ export interface ICaseStudy {
 	technologies: string[];
 	primaryImage?: string;
 	secondaryImages?: string[];
+	/** Excludes this project from the resume's "Selected Projects" section. It still appears on the case studies page. */
+	hidden?: boolean;
 }
 
 export interface IRawCaseStudy {

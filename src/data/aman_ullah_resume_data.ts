@@ -1,3 +1,5 @@
+import { ICaseStudy, ISummaryLine } from '@types';
+
 export const site_owner_name = 'Aman Ullah';
 export const site_base_domain = 'iamanullah.com';
 export const site_full_url = `https://${site_base_domain}`;
@@ -134,15 +136,25 @@ const aman_ullah_resume_data = {
 			],
 			highlights: [],
 			summary: [
-				'Redesigned the B2C website with Next.js, improving performance and SEO.',
-				'Built an internal design system to ensure UI consistency.',
-				'Developed a MERN-based auto-promotion mailing system and a dynamic email templating system.',
-				'Worked on the admin panel, creating multiple APIs for efficient data management.',
-				'Implemented a referendum voting system.',
-				'Integrated the latest HubSpot API into its backend and frontend to enhance lead generation, track user behaviour and check ROI.',
-				'Ensured testing with Jest and Playwright.',
-				'Set up CI/CD pipelines and containerized deployments with Docker on AWS.',
-			],
+				{
+					text: 'Redesigned the B2C website with Next.js, improving performance and SEO.',
+				},
+				{ text: 'Built an internal design system to ensure UI consistency.' },
+				{
+					text: 'Developed a MERN-based auto-promotion mailing system and a dynamic email templating system.',
+				},
+				{
+					text: 'Worked on the admin panel, creating multiple APIs for efficient data management.',
+				},
+				{ text: 'Implemented a referendum voting system.' },
+				{
+					text: 'Integrated the latest HubSpot API into its backend and frontend to enhance lead generation, track user behaviour and check ROI.',
+				},
+				{ text: 'Ensured testing with Jest and Playwright.' },
+				{
+					text: 'Set up CI/CD pipelines and containerized deployments with Docker on AWS.',
+				},
+			] as ISummaryLine[],
 			url: 'https://oxfordsustainable.com/',
 			location: 'UK (Remote)',
 		},
@@ -178,14 +190,28 @@ const aman_ullah_resume_data = {
 			],
 			highlights: [],
 			summary: [
-				'Helped web flight services generate 600 million BDT in monthly sales and handle 72K+ visitors per month.',
-				'Developed the frontend for booking services, including Flights, Hotels, Visas, Holidays, Tours, and Transfers.',
-				'Redesigned and rebuilt B2C & B2B platforms 4-5 times using Next.js & TypeScript, improving UX and performance.',
-				'Created a dynamic coupon system for B2C users, ensuring seamless integration across services.',
-				'Built an extensive design system to support complex UI/UX needs across multiple booking services.',
-				'Mentored and led a team of 5 frontend engineers for 3 years, ensuring high-quality deliverables.',
-				'Set up CI/CD pipelines and containerized deployments with Docker on AWS.',
-			],
+				{
+					text: 'Helped web flight services generate 600 million BDT in monthly sales and handle 72K+ visitors per month.',
+				},
+				{
+					text: 'Developed the frontend for booking services, including Flights, Hotels, Visas, Holidays, Tours, and Transfers.',
+				},
+				{
+					text: 'Redesigned and rebuilt B2C & B2B platforms 4-5 times using Next.js & TypeScript, improving UX and performance.',
+				},
+				{
+					text: 'Created a dynamic coupon system for B2C users, ensuring seamless integration across services.',
+				},
+				{
+					text: 'Built an extensive design system to support complex UI/UX needs across multiple booking services.',
+				},
+				{
+					text: 'Mentored and led a team of 5 frontend engineers for 3 years, ensuring high-quality deliverables.',
+				},
+				{
+					text: 'Set up CI/CD pipelines and containerized deployments with Docker on AWS.',
+				},
+			] as ISummaryLine[],
 			url: 'https://www.linkedin.com/company/sharetrip/',
 			location: 'Dhaka',
 		},
@@ -211,11 +237,15 @@ const aman_ullah_resume_data = {
 			],
 			highlights: [],
 			summary: [
-				'Developed a React application for displaying London Air Forecast on Google Maps.',
-				'Created a responsive UI for air quality monitoring with data visualization.',
-				'Built a mobile application using Flutter.',
-				'Constructed and integrated REST API using NestJS.',
-			],
+				{
+					text: 'Developed a React application for displaying London Air Forecast on Google Maps.',
+				},
+				{
+					text: 'Created a responsive UI for air quality monitoring with data visualization.',
+				},
+				{ text: 'Built a mobile application using Flutter.' },
+				{ text: 'Constructed and integrated REST API using NestJS.' },
+			] as ISummaryLine[],
 			url: '',
 			location: 'Birmingham, England, United Kingdom',
 		},
@@ -240,9 +270,11 @@ const aman_ullah_resume_data = {
 			],
 			highlights: [],
 			summary: [
-				'Built flight booking system with React, Redux and Ant Design stack.',
-				'Developed Pharma71 R&D Mobile app using React Native.',
-			],
+				{
+					text: 'Built flight booking system with React, Redux and Ant Design stack.',
+				},
+				{ text: 'Developed Pharma71 R&D Mobile app using React Native.' },
+			] as ISummaryLine[],
 			url: '',
 			location: 'Dhaka',
 		},
@@ -261,11 +293,17 @@ const aman_ullah_resume_data = {
 			technologies: ['JavaScript', 'HTML', 'CSS', 'WordPress', 'Responsive UI'],
 			highlights: [],
 			summary: [
-				'Created WordPress and static websites for high-value local clients.',
-				'Delivered responsive, high-performance websites using vanilla JavaScript.',
-				'Created around 15 PSD to HTML websites.',
-				'Got my hands dirty with vanilla JavaScript on small to enterprise level projects.',
-			],
+				{
+					text: 'Created WordPress and static websites for high-value local clients.',
+				},
+				{
+					text: 'Delivered responsive, high-performance websites using vanilla JavaScript.',
+				},
+				{ text: 'Created around 15 PSD to HTML websites.' },
+				{
+					text: 'Got my hands dirty with vanilla JavaScript on small to enterprise level projects.',
+				},
+			] as ISummaryLine[],
 			url: '',
 			location: 'Dhaka',
 		},
@@ -284,17 +322,21 @@ const aman_ullah_resume_data = {
 			technologies: ['JavaScript', 'HTML', 'CSS', 'WordPress', 'Responsive UI'],
 			highlights: [],
 			summary: [
-				'Created website and services for high-value local clients.',
-				'Got my hands dirty with vanilla JavaScript on small to enterprise level projects.',
-				'Improved Performance and Usability of the websites.',
-				'Learned about Ionic there.',
-				'Created website and services for high-value govt clients like army and national museum.',
-				'Custom made software for touch Kiosk and dynamic banner.',
-				'Created Pixel Perfect UI for WordPress projects.',
-				'Created Custom WordPress theme.',
-				'Built responsive and adaptive sites.',
-				'Also built SEO Friendly HTML Markups.',
-			],
+				{ text: 'Created website and services for high-value local clients.' },
+				{
+					text: 'Got my hands dirty with vanilla JavaScript on small to enterprise level projects.',
+				},
+				{ text: 'Improved Performance and Usability of the websites.' },
+				{ text: 'Learned about Ionic there.' },
+				{
+					text: 'Created website and services for high-value govt clients like army and national museum.',
+				},
+				{ text: 'Custom made software for touch Kiosk and dynamic banner.' },
+				{ text: 'Created Pixel Perfect UI for WordPress projects.' },
+				{ text: 'Created Custom WordPress theme.' },
+				{ text: 'Built responsive and adaptive sites.' },
+				{ text: 'Also built SEO Friendly HTML Markups.' },
+			] as ISummaryLine[],
 			url: '',
 			location: 'Banani, Dhaka',
 		},
@@ -313,10 +355,12 @@ const aman_ullah_resume_data = {
 			technologies: ['JavaScript', 'HTML', 'CSS', 'E-mail UI', 'Responsive UI'],
 			highlights: [],
 			summary: [
-				'Created website and services for high-value local clients.',
-				'Got my hands dirty with vanilla JavaScript on small to enterprise level projects.',
-				'Improved Performance and Usability of the websites.',
-			],
+				{ text: 'Created website and services for high-value local clients.' },
+				{
+					text: 'Got my hands dirty with vanilla JavaScript on small to enterprise level projects.',
+				},
+				{ text: 'Improved Performance and Usability of the websites.' },
+			] as ISummaryLine[],
 			url: '',
 			location: 'Bashudhara Residential Area, Dhaka',
 		},
@@ -557,7 +601,7 @@ const aman_ullah_resume_data = {
 			primaryImage: '/assets/case-studies/iclique-main.svg',
 			content: `<p>Built the front end and WordPress theme for i-clique's website.</p>`,
 		},
-	],
+	] as ICaseStudy[],
 };
 
 export default aman_ullah_resume_data;

@@ -67,9 +67,9 @@ const Job: FC<IJob> = ({
 			</p>
 
 			<ul className="list-disc ml-4 mt-4">
-				{summary.map((text) => (
-					<li className="mt-1" key={text}>
-						{text}
+				{summary.map((line) => (
+					<li className="mt-1" key={line.text}>
+						{line.text}
 					</li>
 				))}
 			</ul>

@@ -78,7 +78,9 @@ export const getResumeViewModel = (): ResumeViewModel => ({
 		companyUrl: job.company.url,
 		location: job.location,
 		dateRange: formatDateRange(job.startDate, job.endDate),
-		bullets: job.summary,
+		bullets: job.summary
+			.filter((line) => !line.hidden)
+			.map((line) => line.text),
 		technologies: job.technologies,
 	})),
 	education: data.education
@@ -89,10 +91,12 @@ export const getResumeViewModel = (): ResumeViewModel => ({
 			dateLabel: format(new Date(entry.date), 'MMM yyyy'),
 		})),
 	skills: data.textContent.talkAbout,
-	projects: data.projects.map((project) => ({
-		title: project.title,
-		...(project.projectUrl ? { url: project.projectUrl } : {}),
-		clientName: project.client.name,
-		technologies: project.technologies,
-	})),
+	projects: data.projects
+		.filter((project) => !project.hidden)
+		.map((project) => ({
+			title: project.title,
+			...(project.projectUrl ? { url: project.projectUrl } : {}),
+			clientName: project.client.name,
+			technologies: project.technologies,
+		})),
 });
