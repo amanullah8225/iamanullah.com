@@ -10,7 +10,7 @@ import '../styles/index.css';
 import { Layout } from 'Templates/Layout';
 import Script from 'next/script';
 import { useRouter } from 'next/router';
-const GA_MEASUREMENT_ID = 'G-9ZNE7235KL';
+const GA_MEASUREMENT_IDS = ['G-9ZNE7235KL', 'G-W9304M5RCW'];
 
 // Extend the global window object to include gtag
 declare global {
@@ -24,8 +24,10 @@ function MyApp({ Component, pageProps }: AppProps) {
 	useEffect(() => {
 		const handleRouteChange = (url: string) => {
 			if (typeof window.gtag === 'function') {
-				window.gtag('config', GA_MEASUREMENT_ID, {
-					page_path: url,
+				GA_MEASUREMENT_IDS.forEach((id) => {
+					window.gtag('config', id, {
+						page_path: url,
+					});
 				});
 			}
 		};
@@ -35,21 +37,24 @@ function MyApp({ Component, pageProps }: AppProps) {
 			router.events.off('routeChangeComplete', handleRouteChange);
 		};
 	}, [router.events]);
+
+	const gtagInitScript = [
+		'window.dataLayer = window.dataLayer || [];',
+		'function gtag(){dataLayer.push(arguments);}',
+		"gtag('js', new Date());",
+		...GA_MEASUREMENT_IDS.map((id) => `gtag('config', '${id}');`),
+	].join('\n');
+
 	return (
 		<ApolloProvider client={client}>
 			<ThemeProvider attribute="class">
 				<Layout>
 					<Script
-						src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+						src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_IDS[0]}`}
 						strategy="afterInteractive"
 					/>
 					<Script id="gtag-init" strategy="afterInteractive">
-						{`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', '${GA_MEASUREMENT_ID}');
-        `}
+						{gtagInitScript}
 					</Script>
 					<AnimatePresence
 						mode="wait"
