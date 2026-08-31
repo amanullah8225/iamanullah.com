@@ -6,7 +6,8 @@ import { Icon } from 'Atoms/Icon';
 import { SeoHead } from 'Atoms/SeoHead';
 import { Education } from 'Organisms/Education';
 import { WorkExperience } from 'Organisms/WorkExperience';
-import { IEducation, IJob } from '@types';
+import { CaseStudy } from 'Molecules/CaseStudy';
+import { ICaseStudy, IEducation, IJob } from '@types';
 import { NextPage } from 'next';
 
 import data from '../data/aman_ullah_resume_data';
@@ -14,9 +15,10 @@ import data from '../data/aman_ullah_resume_data';
 interface IProps {
 	jobs: IJob[];
 	education: IEducation[];
+	projects: ICaseStudy[];
 }
 
-const AboutPage: NextPage<IProps> = ({ jobs, education }) => {
+const AboutPage: NextPage<IProps> = ({ jobs, education, projects }) => {
 	return (
 		<AnimatePage>
 			<SeoHead
@@ -54,6 +56,12 @@ const AboutPage: NextPage<IProps> = ({ jobs, education }) => {
 
 				<Education education={education} />
 
+				<h2 className="headline mt-12 mb-4 text-4xl">Case Studies/Projects</h2>
+
+				{projects.map((caseStudy, i) => (
+					<CaseStudy key={caseStudy.slug} {...caseStudy} index={i} />
+				))}
+
 				<div className="flex justify-center mt-8">
 					<Button
 						href="/Aman-Ullah-Resume.pdf"
@@ -78,6 +86,7 @@ export async function getStaticProps() {
 		props: {
 			jobs: data.work,
 			education: data.education,
+			projects: data.projects,
 		},
 	};
 }

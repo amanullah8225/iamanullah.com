@@ -19,16 +19,18 @@ import LogoSvelte from 'Public/assets/tools/svelte.svg';
 import LogoVercel from 'Public/assets/tools/vercel.svg';
 import data from '../data/aman_ullah_resume_data';
 import { WorkExperience } from 'Organisms/WorkExperience';
-import { IJob } from '@types';
+import { CaseStudy } from 'Molecules/CaseStudy';
+import { ICaseStudy, IJob } from '@types';
 import { NextPage } from 'next';
 import { Button } from 'Atoms/Button';
 import { Icon } from 'Atoms/Icon';
 
 interface IProps {
 	jobs: IJob[];
+	projects: ICaseStudy[];
 }
 
-const IndexPage: NextPage<IProps> = ({ jobs }) => {
+const IndexPage: NextPage<IProps> = ({ jobs, projects }) => {
 	return (
 		<AnimatePage>
 			<SeoHead
@@ -113,6 +115,18 @@ const IndexPage: NextPage<IProps> = ({ jobs }) => {
 				</Container>
 			</section>
 
+			<section id="projects" className="my-40">
+				<Container>
+					<h1 className="headline text-3xl md:text-5xl lg:text-6xl pb-8 mt-8">
+						Case Studies/Projects
+					</h1>
+
+					{projects.map((caseStudy, i) => (
+						<CaseStudy key={caseStudy.slug} {...caseStudy} index={i} />
+					))}
+				</Container>
+			</section>
+
 			<section id="services">
 				<Container>
 					<div className="flex justify-center mt-8">
@@ -153,6 +167,7 @@ export async function getStaticProps() {
 	return {
 		props: {
 			jobs: data.work,
+			projects: data.projects,
 		},
 	};
 }
