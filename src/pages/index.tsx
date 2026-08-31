@@ -143,7 +143,7 @@ const IndexPage: NextPage<IProps> = ({ jobs, projects }) => {
 						</Button>
 						<span> </span>
 						<Button
-							href="/Aman-Ullah-Resume.pdf"
+							href="/Aman-Ullah-Resume-7.pdf"
 							download={true}
 							className="group flex gap-2 whitespace-nowrap"
 						>

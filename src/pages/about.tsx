@@ -64,7 +64,7 @@ const AboutPage: NextPage<IProps> = ({ jobs, education, projects }) => {
 
 				<div className="flex justify-center mt-8">
 					<Button
-						href="/Aman-Ullah-Resume.pdf"
+						href="/Aman-Ullah-Resume-7.pdf"
 						download={true}
 						className="group flex gap-2 whitespace-nowrap"
 					>

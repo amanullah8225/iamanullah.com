@@ -45,7 +45,7 @@ const ResumeIndexPage: NextPage = () => {
 
 				<div className="mt-12 flex justify-center">
 					<Button
-						href="/Aman-Ullah-Resume.pdf"
+						href="/Aman-Ullah-Resume-7.pdf"
 						download={true}
 						className="group flex gap-2 whitespace-nowrap"
 					>
