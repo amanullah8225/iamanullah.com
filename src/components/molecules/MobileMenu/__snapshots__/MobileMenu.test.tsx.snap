@@ -4,13 +4,13 @@ exports[`MobileMenu renders correctly 1`] = `
 <div>
   <div
     class="fixed md:hidden z-40 transition-all duration-700 delay-100 ease-in-out bg-gradient-to-b from-grey-200 dark:from-grey-900 to-transparent backdrop-blur-xl w-screen p-4 gap-12 top-0 h-screen"
-    style="opacity: 0; transform: translateX(0px) translateY(-50%) translateZ(0);"
+    style="opacity: 0; transform: translateY(-50%);"
   >
     <ul
       class="flex flex-col justify-center align-center text-center gap-4 h-full"
     >
       <li
-        style="opacity: 0; transform: translateX(-50px) translateZ(0);"
+        style="opacity: 0; transform: translateX(-50px);"
       >
         <a
           class="font-medium text-grey-700 md:text-grey-500 hover:text-off-black dark:hover:text-off-white md:underlined transition relative block whitespace-nowrap text-2xl md:text-lg"
@@ -20,38 +20,28 @@ exports[`MobileMenu renders correctly 1`] = `
         </a>
       </li>
       <li
-        style="opacity: 0; transform: translateX(-50px) translateZ(0);"
+        style="opacity: 0; transform: translateX(-50px);"
       >
         <a
           class="font-medium text-grey-700 md:text-grey-500 hover:text-off-black dark:hover:text-off-white md:underlined transition relative block whitespace-nowrap text-2xl md:text-lg"
-          href="/uses"
+          href="/case-studies-projects"
         >
-          Uses
+          Case Studies/Projects
         </a>
       </li>
       <li
-        style="opacity: 0; transform: translateX(-50px) translateZ(0);"
+        style="opacity: 0; transform: translateX(-50px);"
       >
         <a
           class="font-medium text-grey-700 md:text-grey-500 hover:text-off-black dark:hover:text-off-white md:underlined transition relative block whitespace-nowrap text-2xl md:text-lg"
-          href="/projects"
+          href="/resume"
         >
-          Case Studies
-        </a>
-      </li>
-      <li
-        style="opacity: 0; transform: translateX(-50px) translateZ(0);"
-      >
-        <a
-          class="font-medium text-grey-700 md:text-grey-500 hover:text-off-black dark:hover:text-off-white md:underlined transition relative block whitespace-nowrap text-2xl md:text-lg"
-          href="/blog"
-        >
-          Blog
+          Resume
         </a>
       </li>
       <li
         class="flex justify-center mt-12"
-        style="opacity: 0; transform: translateX(-50px) translateZ(0);"
+        style="opacity: 0; transform: translateX(-50px);"
       >
         <button
           aria-label="Toggle Dark Mode"

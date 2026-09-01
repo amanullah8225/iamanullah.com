@@ -1,5 +1,3 @@
-import Head from 'next/head';
-
 import { ResumeViewModel } from 'Utils/resume';
 
 export interface ResumeApplyBuddyProps {
@@ -23,15 +21,10 @@ const SectionTitle = ({ children }: { children: string }) => (
 const ResumeApplyBuddy = ({ data }: ResumeApplyBuddyProps) => {
 	return (
 		<>
-			<Head>
-				<link rel="preconnect" href="https://fonts.googleapis.com" />
-				<link
-					rel="preconnect"
-					href="https://fonts.gstatic.com"
-					crossOrigin="anonymous"
-				/>
-				<style>{`@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;1,400&family=Space+Grotesk:wght@500;600;700&display=swap');`}</style>
-			</Head>
+			<link
+				rel="stylesheet"
+				href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;1,400&family=Space+Grotesk:wght@500;600;700&display=swap"
+			/>
 			<article
 				className="mx-auto max-w-[800px] rounded-xl border border-zinc-300 bg-white px-6 py-10 leading-relaxed text-zinc-950 shadow-sm sm:px-10 sm:py-12 print:rounded-none print:border-none print:shadow-none"
 				style={body}

@@ -1,5 +1,3 @@
-import Head from 'next/head';
-
 import { ResumeViewModel } from 'Utils/resume';
 
 export interface ResumeDocsStyleProps {
@@ -21,15 +19,10 @@ const SectionTitle = ({ children }: { children: string }) => (
 const ResumeDocsStyle = ({ data }: ResumeDocsStyleProps) => {
 	return (
 		<>
-			<Head>
-				<link rel="preconnect" href="https://fonts.googleapis.com" />
-				<link
-					rel="preconnect"
-					href="https://fonts.gstatic.com"
-					crossOrigin="anonymous"
-				/>
-				<style>{`@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');`}</style>
-			</Head>
+			<link
+				rel="stylesheet"
+				href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+			/>
 			<article
 				className="mx-auto max-w-3xl bg-white px-8 py-10 text-[#333333] sm:px-12"
 				style={roboto}

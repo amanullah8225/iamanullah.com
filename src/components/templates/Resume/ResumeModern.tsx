@@ -1,5 +1,3 @@
-import Head from 'next/head';
-
 import Github from 'public/assets/github.svg';
 import Linkedin from 'public/assets/linkedin.svg';
 
@@ -74,15 +72,10 @@ const SectionTitle = ({ children }: { children: string }) => (
 const ResumeModern = ({ data }: ResumeModernProps) => {
 	return (
 		<>
-			<Head>
-				<link rel="preconnect" href="https://fonts.googleapis.com" />
-				<link
-					rel="preconnect"
-					href="https://fonts.gstatic.com"
-					crossOrigin="anonymous"
-				/>
-				<style>{`@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:ital,wght@0,400;0,500;1,400&display=swap');`}</style>
-			</Head>
+			<link
+				rel="stylesheet"
+				href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:ital,wght@0,400;0,500;1,400&display=swap"
+			/>
 			<article
 				className="mx-auto max-w-3xl bg-white px-8 py-12 text-gray-900 sm:px-14"
 				style={{ fontFamily: "'Inter', ui-sans-serif, sans-serif" }}

@@ -1,5 +1,3 @@
-import Head from 'next/head';
-
 import { ResumeViewModel } from 'Utils/resume';
 
 export interface ResumeSerifProps {
@@ -19,15 +17,10 @@ const SectionTitle = ({ children }: { children: string }) => (
 const ResumeSerif = ({ data }: ResumeSerifProps) => {
 	return (
 		<>
-			<Head>
-				<link rel="preconnect" href="https://fonts.googleapis.com" />
-				<link
-					rel="preconnect"
-					href="https://fonts.gstatic.com"
-					crossOrigin="anonymous"
-				/>
-				<style>{`@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&display=swap');`}</style>
-			</Head>
+			<link
+				rel="stylesheet"
+				href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&display=swap"
+			/>
 			<article
 				className="mx-auto max-w-3xl bg-white px-8 py-12 text-black sm:px-14"
 				style={serif}

@@ -1,6 +1,8 @@
+'use client';
+
 import classNames from 'classnames';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+import { usePathname } from 'next/navigation';
 import { motion, Variants } from 'framer-motion';
 
 export interface NavigationItemProps {
@@ -20,8 +22,8 @@ const NavigationItem = ({
 	animate,
 	customDelay,
 }: NavigationItemProps) => {
-	const { asPath } = useRouter();
-	const isActive = asPath.startsWith(href);
+	const pathname = usePathname();
+	const isActive = !!pathname && pathname.startsWith(href);
 
 	return (
 		<motion.li

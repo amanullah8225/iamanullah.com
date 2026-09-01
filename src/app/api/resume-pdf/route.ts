@@ -2,10 +2,13 @@
 import { promises as fs } from 'fs';
 
 import chromium from '@sparticuz/chromium';
-import { NextApiRequest, NextApiResponse } from 'next';
+import { NextResponse } from 'next/server';
 import puppeteer from 'puppeteer-core';
 
 import { getResumeVariant } from 'src/data/resumeVariants';
+
+export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
 
 // Must match the installed @sparticuz/chromium version (see package.json) —
 // used to fetch the matching prebuilt Chromium binary pack from GitHub
@@ -34,16 +37,14 @@ const findLocalChrome = async () => {
 	return null;
 };
 
-export default async function handler(
-	req: NextApiRequest,
-	res: NextApiResponse
-) {
-	const { variant } = req.query;
-	const slug = Array.isArray(variant) ? variant[0] : variant;
+export async function GET(request: Request) {
+	const slug = new URL(request.url).searchParams.get('variant');
 
 	if (!slug || !getResumeVariant(slug)) {
-		res.status(404).json({ error: `Unknown resume variant "${slug}"` });
-		return;
+		return NextResponse.json(
+			{ error: `Unknown resume variant "${slug}"` },
+			{ status: 404 }
+		);
 	}
 
 	const isServerless = Boolean(process.env.VERCEL);
@@ -60,11 +61,13 @@ export default async function handler(
 		} else {
 			const executablePath = await findLocalChrome();
 			if (!executablePath) {
-				res.status(500).json({
-					error:
-						'No local Chrome found for PDF generation. Install Google Chrome or set PUPPETEER_EXECUTABLE_PATH.',
-				});
-				return;
+				return NextResponse.json(
+					{
+						error:
+							'No local Chrome found for PDF generation. Install Google Chrome or set PUPPETEER_EXECUTABLE_PATH.',
+					},
+					{ status: 500 }
+				);
 			}
 			browser = await puppeteer.launch({ executablePath, headless: true });
 		}
@@ -74,8 +77,8 @@ export default async function handler(
 
 		const page = await browser.newPage();
 		await page.setViewport({ width: PAGE_WIDTH, height: 1200 });
-		const protocol = (req.headers['x-forwarded-proto'] as string) || 'http';
-		const origin = `${protocol}://${req.headers.host}`;
+		const protocol = request.headers.get('x-forwarded-proto') || 'http';
+		const origin = `${protocol}://${request.headers.get('host')}`;
 		await page.goto(`${origin}/resume/${slug}`, {
 			waitUntil: 'networkidle0',
 		});
@@ -98,16 +101,21 @@ export default async function handler(
 			pageRanges: '1',
 		});
 
-		res.setHeader('Content-Type', 'application/pdf');
-		res.setHeader(
-			'Content-Disposition',
-			`attachment; filename="Aman-Ullah-Resume-${slug}.pdf"`
-		);
-		res.status(200).send(Buffer.from(pdf));
-	} catch (error) {
-		res.status(500).json({
-			error: error instanceof Error ? error.message : 'Failed to generate PDF',
+		return new NextResponse(Buffer.from(pdf), {
+			status: 200,
+			headers: {
+				'Content-Type': 'application/pdf',
+				'Content-Disposition': `attachment; filename="Aman-Ullah-Resume-${slug}.pdf"`,
+			},
 		});
+	} catch (error) {
+		return NextResponse.json(
+			{
+				error:
+					error instanceof Error ? error.message : 'Failed to generate PDF',
+			},
+			{ status: 500 }
+		);
 	} finally {
 		if (browser) {
 			await browser.close();

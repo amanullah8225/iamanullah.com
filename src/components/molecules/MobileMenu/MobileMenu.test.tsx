@@ -1,14 +1,9 @@
 import { MobileMenu } from '../MobileMenu';
 import { render } from '@testing-library/react';
 
-jest.mock('next/router', () => ({
+jest.mock('next/navigation', () => ({
 	__esModule: true,
-	useRouter: jest.fn().mockReturnValue({
-		route: '',
-		pathname: '',
-		query: '',
-		asPath: '',
-	}),
+	usePathname: jest.fn().mockReturnValue('/'),
 }));
 
 describe('MobileMenu', () => {

@@ -1,3 +1,5 @@
+'use client';
+
 import Headroom from 'react-headroom';
 import { useEffect, useState } from 'react';
 
@@ -6,7 +8,7 @@ import { Logo } from 'Atoms/Logo';
 import { MobileMenu } from 'Molecules/MobileMenu';
 import { NavigationItem } from 'Atoms/NavigationItem';
 import { ThemeToggle } from 'Atoms/ThemeToggle';
-import { useRouter } from 'next/router';
+import { usePathname } from 'next/navigation';
 
 export const navItems = [
 	{
@@ -33,7 +35,7 @@ export const navItems = [
 
 const Header = () => {
 	const [isOpen, setIsOpen] = useState(false);
-	const { pathname } = useRouter();
+	const pathname = usePathname();
 
 	useEffect(() => {
 		if (isOpen) {

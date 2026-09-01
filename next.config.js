@@ -3,19 +3,14 @@ const moduleExports = {
 	poweredByHeader: false,
 	// assetPrefix: process.env.ASSET_HOST || '',
 	productionBrowserSourceMaps: process.env.NODE_ENV === 'production',
-	webpack(config, { isServer }) {
+	// Keep the PDF-generation packages out of the bundle for the resume-pdf
+	// Route Handler; they load their own native/binary assets at runtime.
+	serverExternalPackages: ['@sparticuz/chromium', 'puppeteer-core'],
+	webpack(config) {
 		config.module.rules.push({
 			test: /\.svg$/,
 			use: ['@svgr/webpack'],
 		});
-
-		if (isServer) {
-			config.externals = [
-				...(config.externals || []),
-				'@sparticuz/chromium',
-				'puppeteer-core',
-			];
-		}
 
 		return config;
 	},
