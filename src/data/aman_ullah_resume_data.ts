@@ -48,11 +48,11 @@ const aman_ullah_resume_data = {
 	name: site_owner_name,
 	textContent: {
 		homePage: {
-			title: 'Senior Frontend Developer | Aman Ullah',
+			title: 'Senior Full Stack Developer | Aman Ullah',
 			description:
-				'Senior Frontend Developer with 10+ years of experience, including 6+ years in ReactJS and 4+ years in Next.js, plus 3 years as a Team Lead. Proficient in JavaScript, TypeScript, and advanced UI/UX development, specializing in high-performance, SEO-friendly applications. Currently expanding backend expertise in Node.js and RESTful APIs to transition into a Full Stack Developer role.',
+				'Senior Full Stack Developer with 10+ years of experience, including 6+ years in ReactJS, 4+ years in Next.js, and hands-on Node.js/Express backend development, plus 3 years as a Team Lead. Proficient in JavaScript, TypeScript, and advanced UI/UX development, specializing in high-performance, SEO-friendly applications end-to-end.',
 			keywords: [
-				'Senior Frontend Developer',
+				'Senior Full Stack Developer',
 				'Aman Ullah',
 				'React',
 				'Next.js',
@@ -69,22 +69,22 @@ const aman_ullah_resume_data = {
 			site: "Hey, I'm Aman Ullah",
 		},
 		jobTitleDescription: {
-			site: 'Senior Frontend Developer | Aspiring Full-Stack Developer',
+			site: 'Senior Full Stack Developer | React, Next.js & Node.js',
 		},
 		shortDescription: {
-			site: `Senior Frontend Developer with 10+ years of frontend experience, including 6+ years in ReactJS and 4+ years in Next.js, plus 3 years as a Team Lead. Proficient in JavaScript, TypeScript, and advanced UI/UX development, specializing in high-performance, and SEO-friendly applications. Currently expanding backend expertise in Node.js and RESTful APIs to transition into a Full Stack Developer role.<br/><br/>You can talk to me about`,
+			site: `Senior Full Stack Developer with 10+ years of experience, including 6+ years in ReactJS, 4+ years in Next.js, and hands-on Node.js/Express backend development, plus 3 years as a Team Lead. Proficient in JavaScript, TypeScript, and advanced UI/UX development, specializing in high-performance, SEO-friendly applications end-to-end.<br/><br/>You can talk to me about`,
 		},
 		talkAbout: [...site_owner_talk_about],
 	},
 	basics: {
 		name: site_owner_name,
-		label: 'Senior Frontend Developer | React | Next.js | UI/UX | TypeScript',
+		label: 'Senior Full Stack Developer | React | Next.js | Node.js | TypeScript',
 		image: '',
 		email: site_owner_email,
 		phone: site_owner_phoneNumber,
 		url: site_base_domain,
 		summary:
-			'Senior Frontend Developer with 10+ years of experience, including 6+ years in ReactJS and 4+ years in Next.js, plus 3 years as a Team Lead. Proficient in JavaScript, TypeScript, and advanced UI/UX development, specializing in high-performance, SEO-friendly applications. Currently expanding backend expertise in Node.js and RESTful APIs to transition into a Full Stack Developer role.',
+			'Senior Full Stack Developer with 10+ years of experience, including 6+ years in ReactJS, 4+ years in Next.js, and hands-on Node.js/Express backend development, plus 3 years as a Team Lead. Proficient in JavaScript, TypeScript, and advanced UI/UX development, specializing in high-performance, SEO-friendly applications end-to-end.',
 		location: {
 			countryCode: 'BD',
 			address: 'Dhaka, Bangladesh',
@@ -112,7 +112,7 @@ const aman_ullah_resume_data = {
 				logo: 'oxford-sustainable',
 				url: 'https://oxfordsustainable.com/',
 			},
-			jobTitle: 'Senior Frontend Developer',
+			jobTitle: 'Senior Full Stack Developer',
 			startDate: '2024-11-01',
 			endDate: '',
 			technologies: [
@@ -132,6 +132,7 @@ const aman_ullah_resume_data = {
 				'Playwright',
 				'E2E Testing',
 				'Jest',
+				'CI/CD',
 			],
 			highlights: [],
 			summary: [
@@ -180,6 +181,7 @@ const aman_ullah_resume_data = {
 				'Tailwind CSS',
 				'Playwright',
 				'E2E Testing',
+				'CI/CD',
 			],
 			highlights: [],
 			summary: [
@@ -425,6 +427,7 @@ const aman_ullah_resume_data = {
 				'Tailwind CSS',
 				'Playwright',
 				'E2E Testing',
+				'CI/CD',
 				'FinTech Security',
 			],
 			primaryImage: '/assets/case-studies/oxford-sustainable-main.png',
@@ -459,6 +462,7 @@ const aman_ullah_resume_data = {
 				'Tailwind CSS',
 				'Playwright',
 				'E2E Testing',
+				'CI/CD',
 			],
 			primaryImage: '/assets/case-studies/sharetrip-main.png',
 			secondaryImages: [
